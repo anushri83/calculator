@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <div class="container">
+            <div class="calculator">
+            <input type="text" name="display" id="display" >
+                <div>
+                <input type="button" class="operator" value="AC" onclick="ac()">
+                <input type="button" class="operator" value="DE" onclick="de()">
+                <input type="button" class="operator" value="." onclick="show('.')">
+                <input type="button" class="operator" value="/" onclick="show('/')">
+                </div>
+                <div >
+                 <input type="button" value="7" onclick="show('7')">
+                 <input type="button" value="8" onclick="show('8')">
+                 <input type="button" value="9" onclick="show('9')">
+                 <input type="button" class="operator" value="*" onclick="show('*')">
+                 </div>
+                 <div >
+                 <input type="button" value="4" onclick="show('4')">
+                 <input type="button" value="5" onclick="show('5')">
+                 <input type="button" value="6" onclick="show('6')">
+                 <input type="button" class="operator" value="-" onclick="show('-')">
+                 </div>          
+                 <div >
+                 <input type="button" value="1" onclick="show('1')">
+                 <input type="button" value="2" onclick="show('2')">
+                 <input type="button" value="3" onclick="show('3')">
+                 <input type="button" class="operator" value="+" onclick="show('+')">
+                 </div> 
+                 <div >
+                 <input type="button" value="00" onclick="show('00')">
+                 <input type="button" value="0" onclick="show('0')">
+                 <input type="button" class="operator equal" value="=" onclick="result()"class="equal" style="width: 145px;">
+                 </div>
+        </div>
+    </div>
+<script src="./function.js" ></script>
+</body>
+</html>
